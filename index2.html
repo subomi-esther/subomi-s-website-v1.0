@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="black" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+
+    <div class="menu" id="menu">
+    <button onclick="closeMenu()">&times;</button>
+
+    <ul>
+        <li>    <a id="about" class="links" href="#"><img src="Assets/images/me.png" alt="">About me</a></li>
+        <li>     <a id="experience" class="links" href="#experience"><img src="Assets/images/exp.png"  alt="">Experience</a></li>
+        <li>     <a id="projects" class="links" href="#projects"> <img src="Assets/images/proj.png" alt=""> Projects</a></li>
+        <li>     <a id="contacts" class="links" href="#contact"><img src="Assets/images/Contacts.png" alt="">Contact</a></li>
+        <li>     <a id="photographs" class="links" href="#photographs"> <img src="Assets/images/pho.png" alt="">Photograph</a></li>
+        <li>     <a id="artworks" class="links" href="#artworks"><img src="Assets/images/artw.png" alt="">Artworks</a></li>
+        <li>     <a id="home" onclick="backToHome()"  href="#"><img src="Assets/images/home.png" alt="">Home</a></li>
+     </ul>
+     
+    </div>
+
+
+    <div class="main">
+        <!-- <div id="buttons" class="buttons"> 
+            <div id="about" class="pages">
+             <img src="./Assets/images/me.png" width="70px"  alt="">
+             <p>About Me</p>
+
+            </div>
+            <div id="projects" class="pages">
+            <img src="./Assets/images/proj.png" width="70px"  alt="">
+            <p>Projects</p>
+
+            </div>
+            <div id="experience" class="pages">
+            <img src="./Assets/images/exp.png" width="70px"  alt="">
+            <p>Experience</p>
+
+            </div>
+        </div> -->
+
+
+        <div  class="page">
+            <div >
+              <!-- <img class="image" src="Assets/images/brownT.png" alt=""> -->
+         <!-- <img class="glassesT" src="Assets/images/glassesT.png" alt=""> -->
+
+            </div>
+
+          <p  id= "home" class="homeText">Portfolio</p>
+          <!-- <img src="Assets/images/keychain.png" alt=""> -->
+          <img src="Assets/images/butterfly.png" alt="">
+
+
+
+        </div>
+
+
+        <!-- <div id="buttons2" class="buttons2"> 
+            
+            <div id="contacts" class="pages">
+            <img src="./Assets/images/Contacts.png" width="70px"  alt="">
+            <p>Contacts</p>
+
+            </div>
+            <div id="photographs" class="pages">
+            <img src="./Assets/images/pho.png" width="70px"  alt="">
+            <p>Photographs</p>
+
+            </div>
+            <div id="artworks" class="pages">
+            <img src="./Assets/images/artw.png" width="70px"  alt="">
+            <p>Artworks</p>
+
+            </div>
+
+        </div> -->
+
+    </div>
+    
+    <div id="popUp" class="popUp">
+        <div id="header" class="header">
+            <img src="Assets/images/Adobe Express - file (4).png" width="40px" height="40px" alt="">
+            <p >C:\subomi\<span id="pageName">home</span>
+
+                <button type="reset" id="cancel">X</button>
+
+
+            
+            </p>
+
+        </div>
+        <!-- <hr> -->
+
+<!-- 
+        <div id="text" class="text">
+            <img src="Assets/images/pinkT.jpg" alt="">
+            <div>
+              <p >hi, I'm Subomi! </p>
+                        
+              <p>I'm most ecstatic to have you on my website</p>    
+            </div>
+
+
+        </div>   -->
+
+        <div id="aboutText" class="text">
+                <div class="aboutDiv">
+                    <div class="idInfo">
+                        <label for="name">NAME</label>
+                        <p id="name" class="name">Quadri Olasubomi Esther</p>
+
+                    </div>
+
+                    <div class="idInfo">
+                    <label >DATE OF BIRTH</label>
+                    <p>09/02/2008</p>
+
+                    </div>
+                    <div class="idInfo">
+                    <label >NATIONALITY</label>
+                    <p>Nigeria</p>
+
+                    </div>
+                    <div class="idInfo">
+                    <label >FAV. FOOD</label>
+                    <p>Rice and fried stew</p>
+
+                    </div>
+                    <div class="idInfo">
+                    <label >UNIVERSITY</label>
+                    <p>University of Lagos</p>
+
+                    </div>
+                    <!-- <div class="idInfo">
+                    <label >Fav. color</label>
+                    <p>Black</p>
+
+                    </div> -->
+                    <div class="idInfo">
+                    <label >MBTI</label>
+                    <p>INFJ</p>
+
+                    </div>
+
+
+            <img class="pinimg" src="Assets/images/pins.png" alt="">
+
+                </div>
+
+
+        </div>
+
+        <div id="contactsText" class="text">
+                <p>Github</p>
+                <i class="fa fa-github-square" ></i>
+
+                <p>Linkedin</p>
+                <i class="fa fa-linkedin" ></i>
+
+                <p>Email</p>
+                <i class="fa fa-envelope" ></i>
+
+                <img src="Assets/images/bPhone.png" alt="">
+
+
+
+        </div>
+
+        <div id="experienceText" class="text">
+                <div class="exInfo">
+                <h2>Tools</h2>
+                <p>Vscode</p>
+                <p>Microsoft word</p>
+                <p>Github</p>
+                <p>Figma</p>
+                </div>
+
+                <div class="exInfo">
+                <h2>Skills</h2>
+                <p>HTML</p>
+                <p>Javascript</p>
+                <p>CSS</p>
+                <p>React</p>
+                <p>UI//UX</p>
+                </div>
+
+          <img src="Assets/images/butterfly.png" alt="">
+        </div>
+
+        <div id="photographsBody"  class="text">
+
+        </div>
+
+        <div id="modal" class="modal">
+            <!-- <span class="closeModal"> &times;</span> -->
+
+        </div>
+
+        <div id="artworksBody" class="text">
+
+        </div>
+
+       <div id="projectsBody" class="text">
+        <!-- <div class="project">
+            <img src="Assets/images/photography/20250501_101421.jpg" alt="">
+            <p>Project Title: <span class="projectTitle">Title</span></p>
+            <div>
+                <p>Tags</p>
+                <button>HTML</button>
+                <button>CSS</button>
+                <button>JS</button>
+            </div>
+            <p>Year: <span>2025</span> </p>
+            <p>Link: <span><a href="www.google.com">Link</a></span> </p>
+
+
+        </div> -->
+
+        </div>        
+
+    </div>
+
+        <footer>
+            &copy; All Rights Reserved. Subomi. 2026.
+        </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

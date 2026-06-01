@@ -1,0 +1,107 @@
+[
+        {
+        "image":"./Assets/images/project/image gallery.png" ,
+       "name": "Desserts Gallery",
+       "tags": [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year": 2025,
+       "id": 1,
+        "link": "https://myfoodgallery.vercel.app/"
+
+
+    } , 
+        {
+        "image":"./Assets/images/project/bentogrid.jpg" ,
+       "name": "Bento Grid",
+       "tags":[
+        "html",
+        "css"
+       ],
+       "year": 2025,
+       "id": 2,
+        "link": "https://bento-grid-seven-tau.vercel.app/"
+
+    } , 
+        {
+        "image":"./Assets/images/project/newsletter.jpg" ,
+       "name": "Newsletter Form",
+       "tags":  [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year":2025 ,
+       "id": 3,
+        "link": "https://newsletter-form-black.vercel.app/"
+
+
+    } , 
+        {
+        "image":"./Assets/images/project/ratingSite.jpg" ,
+       "name": "Rating Site",
+       "tags":  [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year":2025 ,
+       "id": 4,
+        "link": "https://rating-site-six.vercel.app/"
+
+    } , 
+        {
+        "image":"./Assets/images/project/calculator.jpg" ,
+       "name": "Calculator",
+       "tags":  [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year":2025 ,
+       "id": 5,
+        "link": "https://calculator-flax-five-81.vercel.app/"
+
+    } , 
+        {
+        "image":"./Assets/images/project/weather.jpg" ,
+       "name": "Weather App",
+       "tags":  [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year": 2025 ,
+       "id": 6,
+        "link": "https://weather-app-eight-theta-73.vercel.app/"
+
+    } , 
+        {
+        "image":"./Assets/images/project/naijachristmas.jpg" ,
+       "name": "Naija Christmas",
+       "tags": [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year": 2025 ,
+       "id": 7,
+        "link": "https://naija-christmas.vercel.app/"
+
+    } , 
+        {
+        "image":"./Assets/images/project/productlist.jpg" ,
+       "name": "ProductList Page",
+       "tags":  [
+        "html",
+        "css",
+        "javascript"
+       ],
+       "year": 2026,
+       "id": 8,
+        "link": "https://product-list-page-two.vercel.app/?"
+
+    } 
+]
