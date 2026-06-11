@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document2</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
         <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,137 +28,50 @@
 
 
     <div class="main">
-        <!-- <div id="buttons" class="buttons"> 
-            <div id="about" class="pages">
-             <img src="./Assets/images/me.png" width="70px"  alt="">
-             <p>About Me</p>
 
-            </div>
-            <div id="projects" class="pages">
-            <img src="./Assets/images/proj.png" width="70px"  alt="">
-            <p>Projects</p>
-
-            </div>
-            <div id="experience" class="pages">
-            <img src="./Assets/images/exp.png" width="70px"  alt="">
-            <p>Experience</p>
-
-            </div>
-        </div> -->
-
-
-        <div  class="page">
-            <div >
-              <!-- <img class="image" src="Assets/images/brownT.png" alt=""> -->
-         <!-- <img class="glassesT" src="Assets/images/glassesT.png" alt=""> -->
-
-            </div>
+        <div  class="homePage">
 
           <p  id= "home" class="homeText">Portfolio</p>
-          <!-- <img src="Assets/images/keychain.png" alt=""> -->
           <img src="Assets/images/butterfly.png" alt="">
-
-
 
         </div>
 
-
-        <!-- <div id="buttons2" class="buttons2"> 
-            
-            <div id="contacts" class="pages">
-            <img src="./Assets/images/Contacts.png" width="70px"  alt="">
-            <p>Contacts</p>
-
-            </div>
-            <div id="photographs" class="pages">
-            <img src="./Assets/images/pho.png" width="70px"  alt="">
-            <p>Photographs</p>
-
-            </div>
-            <div id="artworks" class="pages">
-            <img src="./Assets/images/artw.png" width="70px"  alt="">
-            <p>Artworks</p>
-
-            </div>
-
-        </div> -->
 
     </div>
     
     <div id="popUp" class="popUp">
         <div id="header" class="header">
             <img src="Assets/images/Adobe Express - file (4).png" width="40px" height="40px" alt="">
-            <p >C:\subomi\<span id="pageName">home</span>
-
-                <button type="reset" id="cancel">X</button>
-
+            <p >C:\subomi\<span class="pageName" id="pageName">home</span>
 
             
             </p>
 
         </div>
-        <!-- <hr> -->
 
-<!-- 
-        <div id="text" class="text">
-            <img src="Assets/images/pinkT.jpg" alt="">
-            <div>
-              <p >hi, I'm Subomi! </p>
-                        
-              <p>I'm most ecstatic to have you on my website</p>    
+
+        <div id="aboutText" class="page">
+            <div class="aboutDiv">
+                <p> Hi! I’m Olasubomi, a Cell Biology and Genetics Student, based in Nigeria.
+                        I have taken an interest in web development and recntly completed a one year course in Front-end 
+                        Engineering.
+                        Outside of school and work, I love drawing,
+                        journalling, and finding the aesthetics in 
+                        everything I come across a.k.a Photography.
+                        I designed and coded this website, as my aim was to
+                        build something fun and easy and could describe who I am as a person.
+                        I am open to both freelance and remote part-time jobs. I might still be an entry level but I am open to learning new things,
+                        adaptable to team work and eager to gain hands on experience and that, I think, is what matters most.
+                </p>
+
+
+                <img class="pinimg" src="Assets/images/pins.png" alt="">
+
             </div>
-
-
-        </div>   -->
-
-        <div id="aboutText" class="text">
-                <div class="aboutDiv">
-                    <div class="idInfo">
-                        <label for="name">NAME</label>
-                        <p id="name" class="name">Quadri Olasubomi Esther</p>
-
-                    </div>
-
-                    <div class="idInfo">
-                    <label >DATE OF BIRTH</label>
-                    <p>09/02/2008</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >NATIONALITY</label>
-                    <p>Nigeria</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >FAV. FOOD</label>
-                    <p>Rice and fried stew</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >UNIVERSITY</label>
-                    <p>University of Lagos</p>
-
-                    </div>
-                    <!-- <div class="idInfo">
-                    <label >Fav. color</label>
-                    <p>Black</p>
-
-                    </div> -->
-                    <div class="idInfo">
-                    <label >MBTI</label>
-                    <p>INFJ</p>
-
-                    </div>
-
-
-            <img class="pinimg" src="Assets/images/pins.png" alt="">
-
-                </div>
-
 
         </div>
 
-        <div id="contactsText" class="text">
+        <div id="contactsText" class="page">
                 <p>Github</p>
                 <i class="fa fa-github-square" ></i>
 
@@ -169,13 +81,10 @@
                 <p>Email</p>
                 <i class="fa fa-envelope" ></i>
 
-                <img src="Assets/images/bPhone.png" alt="">
-
-
 
         </div>
 
-        <div id="experienceText" class="text">
+        <div id="experienceText" class="page">
                 <div class="exInfo">
                 <h2>Tools</h2>
                 <p>Vscode</p>
@@ -190,40 +99,22 @@
                 <p>Javascript</p>
                 <p>CSS</p>
                 <p>React</p>
-                <p>UI//UX</p>
+                <p>UI/UX</p>
                 </div>
 
-          <img src="Assets/images/butterfly.png" alt="">
+          <img width="300px" src="Assets/images/butterfly.png" alt="">
         </div>
 
-        <div id="photographsBody"  class="text">
-
-        </div>
-
-        <div id="modal" class="modal">
-            <!-- <span class="closeModal"> &times;</span> -->
+        <div id="photographsBody"  class="page">
 
         </div>
 
-        <div id="artworksBody" class="text">
+
+        <div id="artworksBody" class="page">
 
         </div>
 
-       <div id="projectsBody" class="text">
-        <!-- <div class="project">
-            <img src="Assets/images/photography/20250501_101421.jpg" alt="">
-            <p>Project Title: <span class="projectTitle">Title</span></p>
-            <div>
-                <p>Tags</p>
-                <button>HTML</button>
-                <button>CSS</button>
-                <button>JS</button>
-            </div>
-            <p>Year: <span>2025</span> </p>
-            <p>Link: <span><a href="www.google.com">Link</a></span> </p>
-
-
-        </div> -->
+       <div id="projectsBody" class="page">
 
         </div>        
 

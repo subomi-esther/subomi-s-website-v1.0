@@ -1,6 +1,6 @@
 [
         {
-        "image":"./Assets/images/project/image gallery.png" ,
+        "image":"./Assets/images/project/index.js - rating site - Visual Studio Code 6_2_2026 10_04_17 PM.png" ,
        "name": "Desserts Gallery",
        "tags": [
         "html",
@@ -14,7 +14,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/bentogrid.jpg" ,
+        "image":"./Assets/images/project/Bento Grid - Google Chrome 6_2_2026 10_01_33 PM.png" ,
        "name": "Bento Grid",
        "tags":[
         "html",
@@ -26,7 +26,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/newsletter.jpg" ,
+        "image":"./Assets/images/project/index.html - naija christmas - Visual Studio Code 6_2_2026 10_02_54 PM.png" ,
        "name": "Newsletter Form",
        "tags":  [
         "html",
@@ -40,7 +40,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/ratingSite.jpg" ,
+        "image":"./Assets/images/project/index.html - Calculator - Visual Studio Code 6_2_2026 10_03_46 PM.png" ,
        "name": "Rating Site",
        "tags":  [
         "html",
@@ -53,7 +53,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/calculator.jpg" ,
+        "image":"./Assets/images/project/index.html - newsletter form - Visual Studio Code 6_2_2026 10_03_25 PM.png" ,
        "name": "Calculator",
        "tags":  [
         "html",
@@ -66,7 +66,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/weather.jpg" ,
+        "image":"./Assets/images/project/Weather App - Google Chrome 6_5_2026 10_22_39 PM.png" ,
        "name": "Weather App",
        "tags":  [
         "html",
@@ -79,7 +79,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/naijachristmas.jpg" ,
+        "image":"./Assets/images/project/index.js - product list page - Visual Studio Code 6_2_2026 10_02_29 PM.png" ,
        "name": "Naija Christmas",
        "tags": [
         "html",
@@ -92,7 +92,7 @@
 
     } , 
         {
-        "image":"./Assets/images/project/productlist.jpg" ,
+        "image":"./Assets/images/project/Screenshot 6_2_2026 10_02_04 PM.png" ,
        "name": "ProductList Page",
        "tags":  [
         "html",

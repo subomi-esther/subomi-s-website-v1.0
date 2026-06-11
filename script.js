@@ -1,20 +1,18 @@
 
-const pageContent = document.getElementById('text')
-const buttons = document.querySelectorAll('.pages')
+// const pageContent = document.getElementById('text')
+// const buttons = document.querySelectorAll('.pages')
 const br = document.getElementById('buttons2')
 const bre = document.getElementById('buttons')
 const pageName = document.getElementById('pageName')
-const ps = document.getElementById('photographsBody')
-const as = document.getElementById('artworksBody')
-const pb = document.getElementById('projectsBody')
-const cancel = document.getElementById('cancel')
+const photographs = document.getElementById('photographsBody')
+const artworks = document.getElementById('artworksBody')
+const projectBody = document.getElementById('projectsBody')
 const popUp = document.getElementById('popUp')
 const header = document.getElementById('header')
 const menu = document.getElementById('menu')
 const menuBar = document.getElementById('menu-bar')
 const links = document.querySelectorAll('.links')
-const texts = document.querySelectorAll('.text')
-const modal = document.getElementById('modal')
+const pages = document.querySelectorAll('.page')
 const closeModal = document.getElementById('closeModal')
 
 async function getPhotographs() {
@@ -94,24 +92,23 @@ const artworksImgs = [
    "./Assets/images/artwork/20250921_174745.jpg",
    "./Assets/images/artwork/20250921_174723.jpg",
    "./Assets/images/artwork/20250919_175339.jpg",
-   "./Assets/images/artwork/20250906_160705.jpg" ,
-    "./Assets/images/artwork/20250930_175832.jpg"
+   "./Assets/images/artwork/20250906_160705.jpg" 
+    // "./Assets/images/artwork/20250930_175832.jpg"
 ]
 function getImage(photos){
   const images = [ ]
 
-  for(let imge of photos) {
-    images.push(imge.image)
+  for(let imgs of photos) {
+    images.push(imgs.image)
   }
 
-  // console.log(images);
 
   images.forEach(image => {
     const img = document.createElement('img') 
     img.src = image
     img.className = 'photos'
     
-    ps.appendChild(img)
+    photographs.appendChild(img)
 
 
   })
@@ -119,29 +116,11 @@ function getImage(photos){
    
   artworksImgs.forEach(art => {
     const artImg = document.createElement('img')
-    const modalImg = document.createElement('img')
-    const close = document.createElement('span')
-    close.className = 'closeModal'
-    close.innerHTML = `X`
-  
-
     artImg.src = art
     artImg.className = 'photos'
 
-    artImg.onclick = function(){
-      console.log('clicked');
-      modal.style.display = 'block'
-      modalImg.src = art
-      // console.log(modalImg);
-      close.onclick = function(){
-  modal.style.display = 'none'
- }
-    }
+    artworks.appendChild(artImg)
 
-    as.appendChild(artImg)
-        // modal.appendChild(close)
-
-    // modal.appendChild(modalImg)
   })
 
 
@@ -154,74 +133,38 @@ function displayProjects(projects){
   const name = []
   const pImg = []
   const link = []
-  const tag = []
+  // const tag = []
 
-  for(let pro of projects) {
-    id.push(pro.id)
-    year.push(pro.year)
-    name.push(pro. name)
-    pImg.push(pro.image)
-    link.push(pro.link)
-    tag.push(pro.tags)
+  for(let project of projects) {
+    id.push(project.id)
+    year.push(project.year)
+    name.push(project. name)
+    pImg.push(project.image)
+    link.push(project.link)
+    // tag.push(project.tags)
 
   }
-//  console.log(id);
-  // console.log(tag);
-
 
 
    id.forEach((ide, i) => {
       const project = document.createElement('div')
-      project.className = 'projectMob'
-      // console.log(id[i]);
-      // project.id =  `${ide}id`
-      project.id =  `${id[i]}`
-      // console.log(project.id);
-      // const projectM =  document.getElementById(`${ide}id`)
+      project.className = 'projectDiv'
 
-      // console.log(project);
+      project.id =  `${id[i]}`
+
 
       let image = document.createElement('img')
       let pName = document.createElement('p')
-      let tagCon = document.createElement('div')
+      // let tagCon = document.createElement('div')
       let pYear = document.createElement('p')
       let pLink = document.createElement('div')
-      let tagP = document.createElement('p')
+      // let tagP = document.createElement('p')
       pLink.className= 'viewProjectBtn'
       
-
-      // console.log(tag[i]);
-
       pName.innerHTML = `<p>Project Title: <span class="projectTitle">${ name[i]}</span></p>`
       pYear.innerHTML = `<p>Year: <span>${ year[i]}</span> </p>`
       image.src = pImg[i]
-      // pLink.innerHTML = `<p>Link: <span><a href="${link[i]}">${link[i]}</a></span> </p>`
       pLink.innerHTML = ` <a href="${link[i]}">View Project</a>`
-      tagP.textContent = 'Tags:'
-
-      // tag.flat().forEach(tags => {
-      //         const tagBtn = document.createElement('button')
-
-      //         tagBtn.textContent = `${tags}`
-              
-      //         tagCon.appendChild(tagBtn)
-
-      // })
-
-
-     
-    
-
-      // tag.forEach((tags, i) => {
-        // const tagBtn = document.createElement('button')
-
-        //       tagBtn.textContent = `${tag[i]}`
-        //      tagCon.appendChild(tagBtn)
-
-
-             
-
-      // })
 
     project.appendChild(image)
     project.appendChild(pName)
@@ -229,21 +172,9 @@ function displayProjects(projects){
     project.appendChild(pYear)
     project.appendChild(pLink)
 
-      pb.appendChild(project)
+    projectBody.appendChild(project)
 
     
-
-   tagCon.appendChild(tagP)
-    // console.log(project);
-          // let width = window.innerWidth
-      // if(width > 768) { 
-        // document.getElementById(  `${id[i]}`).classList.remove('projecte')
-        // document.getElementById(  `${id[i]}`).classList.add('projectMob')
-
-      // }
-        // console.log(buttons);
-        
-
 
 
    })
@@ -253,44 +184,6 @@ function displayProjects(projects){
 }
 
 
-
-// function openPages() {
-//   buttons.forEach((btn, i) => {
-//     btn.addEventListener('click', function(){
-//       popUp.style.display = 'block'
-
-//       pageName.textContent = btn.id
-//       const clickedId = btn.id
-//       const texts = document.querySelectorAll('.text')
-//       texts.forEach((text, i)=> {
-//       const textN = text.id
-
-//       if(textN.includes(clickedId)){
-//           document.getElementById(textN).style.display = 'grid'
-                
-
-//       } else if(!textN.includes(clickedId)) {
-//           document.getElementById(textN).style.display = "none"
-//       }
-
-//       })
-
-
-
-//     })
-
-//   })
-
-// }
-
-
-  
-  
-  cancel.addEventListener('click', function(){
-    popUp.style.display = 'none'
-    console.log('cancel');
-    
-})
   function closeMenu(){
     // menu.classList.add('slideOut')
     menu.style.display = 'none'
@@ -300,84 +193,53 @@ function displayProjects(projects){
 
   menuBar.addEventListener('click', function(){
     menu.style.display = 'flex'
-    // menu.classList.add('show')
   
   })
   links.forEach((link, i) => {
         link.addEventListener('click', function(){
-         menu.style.display = 'none'
-          popUp.style.display = 'block'
-              // console.log(link.id);
-          pageName.textContent = link.id
-          const clickedId = link.id
-          // console.log(clickedId);
-          texts.forEach((text, i)=> {
-          const textN = text.id
+        menu.style.display = 'none'
+        popUp.style.display = 'block'
+        pageName.textContent = link.id
+        const clickedId = link.id
+        
+        pages.forEach((page)=> {
+          const openedPage = page.id
 
-          if(textN.includes(clickedId)){
-            //  console.log(textN);
+          if(openedPage.includes(clickedId)){
 
-            // console.log('hii');
-              document.getElementById(textN).style.display = 'grid'
-              document.getElementById(textN).classList.add('paged')
-              header.style.display = 'flex'
-              popUp.classList.remove('popUp')
-              popUp.classList.add('popdown')
-              // header.classList.remove('header')
+            document.getElementById(openedPage).style.display = 'grid'
+            header.style.display = 'flex'
 
-              // header.classList.add('headerMob')
-              cancel.style.display = 'none'
-              
-              pb.classList.add('proMob')
-
-              document.getElementById('contactsText').classList.add('con')
 
                     
 
-          } else if(!textN.includes(clickedId)) {
-              document.getElementById(textN).style.display = "none"
+          } else if(!openedPage.includes(clickedId)) {
+              document.getElementById(openedPage).style.display = "none"
           }
 
           })
-
-
-
         })
-
-       
-  
    })
   function backToHome() {
-    popUp.style.display = 'none'
-        menu.style.display = 'none'
+   popUp.style.display = 'none'
+   menu.style.display = 'none'
 
   }
-      let width = window.innerWidth
-      if(width < 768) {
-        // console.log(buttons);
-        
-        // br.style.display = 'none'
-        // bre.style.display = 'none'
-        menuBar.style.display ='flex'
-       as.style.gridTemplateColumns =  "1fr 1fr"
-       pb.style.gridTemplateColumns =  "1fr"
-       ps.style.gridTemplateColumns =  "1fr 1fr"
+  
+  let width = window.innerWidth
+  if(width < 768) {
+
+    menu.style.display = 'flex'
+
+    artworks.style.gridTemplateColumns =  "1fr"
+    projectBody.style.gridTemplateColumns =  "1fr"
+    photographs.style.gridTemplateColumns =  "1fr"
 
       } else if (width > 1024) {
         menu.style.display = 'flex'
-      // productImg[i].src = tabletImages[i]
 
       } 
-  //     else {  
-        
-  //       setTimeout(() => {
-  //   popUp.style.display = 'block'
 
-  // }, 2500);
-
-
-  //     }
 
 getPhotographs()
 getProjects() 
-// openPages()
