@@ -446,14 +446,7 @@ footer {
     display: grid;
     /* margin: 0; */
 }
-#contactsText img {
-    position: fixed;
-    top: 9%;
-    animation: swing 2.5s ease-in-out forwards infinite;
-    /* transform: rotate(-10deg); */
-    /* transform: translateZ(0); */
-    /* backface-visibility: hidden; */
-}
+
 #experienceText {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -464,22 +457,18 @@ footer {
 }
 .projectDiv img {
     
-    /* border-radius: 5px; */
     border-bottom-right-radius: 10px; 
     border-bottom-left-radius: 10px;
     height: 150px;
     width:100%;
     border-radius: 10px;
-    /* top: 0; */
 
 }
 .photos {
     width: 100%;
 }
 #artworksBody img {
-    /* padding: 20px; */
     width: 100%;
-    /* width: 180px; */
 }
 #photographsBody {
 
@@ -504,7 +493,6 @@ footer {
     justify-content: space-around;
   }
      .homeText { 
-    /* font-size: 40px; */
     font-family: 'Rockybilly';
     top: 30%;
     left: 10%;

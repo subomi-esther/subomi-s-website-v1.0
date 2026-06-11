@@ -3,105 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document2</title>
+        <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <div class="frontPage" id="frontPage">
-        <img src="Assets/images/cute.gif" alt="">
+    <svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="black" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
 
-        <h1>Hi! Welcome</h1>
-        <button id="startBtn">Take a tour</button>
+    <div class="menu" id="menu">
+    <button onclick="closeMenu()">&times;</button>
 
-
-     </div>
-    <main id="main"> 
-
-
-      <div class="homePage">
-            <div class="firstHalf">
-            <div id="about" class="pages"> About me</div>
-            <div id="experience" class="pages">Experience</div>
-            <div id="contacts" class="pages">Contacts</div>
-            <!-- since thiis section opens a different ui, we might have to change its classes. -->
-
-            <div id="projects" class="pager">Project</div> 
-            <div id="photographs" class="pager">Photographs</div>
-            <div id="artworks" class="pager">Artworks</div>
-            </div>
+    <ul>
+        <li>    <a id="about" class="links" href="#"><img src="Assets/images/me.png" alt="">About me</a></li>
+        <li>     <a id="experience" class="links" href="#experience"><img src="Assets/images/exp.png"  alt="">Experience</a></li>
+        <li>     <a id="projects" class="links" href="#projects"> <img src="Assets/images/proj.png" alt=""> Projects</a></li>
+        <li>     <a id="contacts" class="links" href="#contact"><img src="Assets/images/Contacts.png" alt="">Contact</a></li>
+        <li>     <a id="photographs" class="links" href="#photographs"> <img src="Assets/images/pho.png" alt="">Photograph</a></li>
+        <li>     <a id="artworks" class="links" href="#artworks"><img src="Assets/images/artw.png" alt="">Artworks</a></li>
+        <li>     <a id="home" onclick="backToHome()"  href="#"><img src="Assets/images/home.png" alt="">Home</a></li>
+     </ul>
+     
+    </div>
 
 
-            <!-- <img src="Assets/images/miffy.png" alt=""> -->
+    <div class="main">
 
- 
-      <div class="secondHalf">
-        
-        <div class="outerDiv">
+        <div  class="homePage">
 
-            <div class="header">
-                <img src="Assets/images/Adobe Express - file (4).png" width="40px" height="40px" alt="">
-                <p >C:\subomi\<span id="pageName">home</span></p>
+          <p  id= "home" class="homeText">Portfolio</p>
+          <img src="Assets/images/butterfly.png" alt="">
 
-            </div>
-            <hr>
-
-             <!-- <img class="kitty" src="Assets/images/kitty.png" alt=""> -->
+        </div>
 
 
-            <div id="text" class="text">
-                <p >hi, I'm Subomi! </p>
-                    
-                <p>I'm most ecstatic to have you on my website</p>
+    </div>
+    
+    <div id="popUp" class="popUp">
+        <div id="header" class="header">
+            <img src="Assets/images/Adobe Express - file (4).png" width="40px" height="40px" alt="">
+            <p >C:\subomi\<span class="pageName" id="pageName">home</span>
 
-            </div>   
-            <div id="aboutText" class="text">
-                <div class="aboutDiv">
-                    <div class="idInfo">
-                        <label for="name">NAME</label>
-                        <p id="name" class="name">Quadri Olasubomi Esther</p>
+            
+            </p>
 
-                    </div>
-
-                    <div class="idInfo">
-                    <label >DATE OF BIRTH</label>
-                    <p>09/02/2008</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >NATIONALITY</label>
-                    <p>Nigeria</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >FAV. FOOD</label>
-                    <p>Rice and fried stew</p>
-
-                    </div>
-                    <div class="idInfo">
-                    <label >UNIVERSITY</label>
-                    <p>University of Lagos</p>
-
-                    </div>
-                    <!-- <div class="idInfo">
-                    <label >Fav. color</label>
-                    <p>Black</p>
-
-                    </div> -->
-                    <div class="idInfo">
-                    <label >MBTI</label>
-                    <p>INFJ</p>
-
-                    </div>
+        </div>
 
 
+        <div id="aboutText" class="page">
+            <div class="aboutDiv">
+                <p> Hi! I’m Olasubomi, a Cell Biology and Genetics Student, based in Nigeria.
+                        I have taken an interest in web development and recntly completed a one year course in Front-end 
+                        Engineering.
+                        Outside of school and work, I love drawing,
+                        journalling, and finding the aesthetics in 
+                        everything I come across a.k.a Photography.
+                        I designed and coded this website, as my aim was to
+                        build something fun and easy and could describe who I am as a person.
+                        I am open to both freelance and remote part-time jobs. I might still be an entry level but I am open to learning new things,
+                        adaptable to team work and eager to gain hands on experience and that, I think, is what matters most.
+                </p>
 
-                </div>
 
+                <img class="pinimg" src="Assets/images/pins.png" alt="">
 
             </div>
 
-            <div id="contactsText" class="text">
+        </div>
+
+        <div id="contactsText" class="page">
                 <p>Github</p>
                 <i class="fa fa-github-square" ></i>
 
@@ -112,10 +82,9 @@
                 <i class="fa fa-envelope" ></i>
 
 
+        </div>
 
-            </div>
-
-            <div id="experienceText" class="text">
+        <div id="experienceText" class="page">
                 <div class="exInfo">
                 <h2>Tools</h2>
                 <p>Vscode</p>
@@ -130,93 +99,31 @@
                 <p>Javascript</p>
                 <p>CSS</p>
                 <p>React</p>
-                <p>UI//UX</p>
+                <p>UI/UX</p>
                 </div>
 
-
-            </div>
-        
+          <img width="300px" src="Assets/images/butterfly.png" alt="">
         </div>
 
-      </div>
-
-      </div>
-     
-      <hr>
-     <!-- <img class="miffy" src="Assets/images/miffy.png" alt=""> -->
-
-        <!-- <footer>
-            &copy; All Rights Reserved. Subomi. 2026.
-        </footer> -->
-    </main>
-
-
-   <div id="main2" class="main2">
-        <nav>
-            <ul>
-                <li id="home" class="li">Home</li>
-                <li id="photographs" class="li">Photographs</li>
-                <li class="li">Artworks</li>
-                <li class="li">Projects</li>
-            </ul>
-        </nav>
-    
-        <div id="photographsBody"  class="body">
-           <!-- <img src="Assets/images/photography/20241026_182802.jpg" alt="">
-           <img src="Assets/images/photography/20241225_003659.jpg" alt=""> -->
-
-
+        <div id="photographsBody"  class="page">
 
         </div>
 
-        <div id="artworksBody" class="body">
 
-
+        <div id="artworksBody" class="page">
 
         </div>
+
+       <div id="projectsBody" class="page">
+
+        </div>        
+
+    </div>
 
         <footer>
             &copy; All Rights Reserved. Subomi. 2026.
         </footer>
+    <script src="script.js"></script>
 
-    </div>
-  
-
-
-
-    <!-- <main>
-        <div class="firstDiv">
-            <div class="secondDiv" id="secondDiv">
-                <div class="firstHalf">
-                    <div class="info">
-                        <p>Hi, I'm Subomi! I'm most escatic to have you on my website</p>
-                    </div>
-                    
-                    <div class="contacts">
-
-                        <i class="fa fa-github-square" ></i>
-                        <i class="fa fa-linkedin" ></i>
-                        <i class="fa fa-envelope" ></i>
-
-                    </div>
-
-                </div>
-
-                 <div class="line">
-
-                 </div>
-
-                <div class="secondHalf">
-                    <button cla"> About me</button>
-                    <button class="experience">Experience</button>
-                    <button class="project">Project</button>
-                </div>
-
-            </div>
-        </div>
-    </main>
-     -->
-
-    <script src="index.js"></script>
 </body>
 </html>
