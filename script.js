@@ -184,12 +184,12 @@ function displayProjects(projects){
 }
 
 
-  function closeMenu(){
-    // menu.classList.add('slideOut')
-    menu.style.display = 'none'
+  // function closeMenu(){
+  //   // menu.classList.add('slideOut')
+  //   menu.style.display = 'none'
     
 
-  }
+  // }
 
   menuBar.addEventListener('click', function(){
     menu.style.display = 'flex'
