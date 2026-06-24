@@ -15,29 +15,29 @@ const links = document.querySelectorAll('.links')
 const pages = document.querySelectorAll('.page')
 const closeModal = document.getElementById('closeModal')
 
-async function getPhotographs() {
+// async function getPhotographs() {
 
-    const url = './photographs.json'
+//     const url = './photographs.json'
     
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
+//   try {
+//     const response = await fetch(url);
+//     if (!response.ok) {
+//       throw new Error(`Response status: ${response.status}`);
+//     }
 
-    const photos = await response.json();
-    // console.log(photos);
-   getImage(photos)
+//     const photos = await response.json();
+//     // console.log(photos);
+//    getImage(photos)
 
      
 
 
-} catch (error) {
-    console.error(error.message);
-  }
+// } catch (error) {
+//     console.error(error.message);
+//   }
 
 
-}
+// }
 async function getProjects() {
 
     const url = './project.json'
@@ -241,5 +241,5 @@ function displayProjects(projects){
       } 
 
 
-getPhotographs()
+// getPhotographs()
 getProjects() 

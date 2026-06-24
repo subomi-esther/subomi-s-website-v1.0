@@ -56,43 +56,75 @@
 
 body {
     
-    background-color: #e4bec5;
+    background-color:#102D2A;
+    /* background-color:#4F797D; */
     margin: 0;
+            color: #E4F6F4;
+
 
 }
 
 .menu {
     display: flex;
-    justify-content: center;
-  background-color: #809c85;
-  width: 100%;
+    justify-content: space-between;
+    /* justify-content: center; */
+    background-color: #E4F6F4;
+  /* width: 100%; */
   /* height: 100%; */
   z-index: 19;
   /* right: 0; */
   top: 0;
   padding: 20px;
-  position: fixed;
-  display: none;
+  /* position: fixed; */
+  /* display: none; */
   /* animation-name: slide-in-right;
   animation-duration: 1.5s; */
+  color:#102D2A ;
 }
-
-.menu ul{
+ul {
     display: flex;
-    justify-content: space-around;
-    /* flex-direction: column; */
+    /* justify-content: space-between; */
     list-style: none;
-    padding: 0;
     font-family: 'Akaya';
+    font-size: 20px;
     gap: 30px;
+    /* display: grid; */
 
+  color:#102D2A ;
 
 }
 
+a {
+    position: relative;
+}
+ ul a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width .4s ease;
+}
 
-ul img {
-    width: 50px;
-    margin-bottom: -15px;
+ ul a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #102D2A ;
+}
+.menu p {
+    font-size: 28px;
+    /* height: 100px; */
+}
+.profile img{
+    /* background-color:#ebe5ff ; */
+    /* width: 50px;
+    height: 50px; */
+    border-radius: 50%;
+    text-align: center;
+      overflow: hidden;
 
 }
 
@@ -106,7 +138,7 @@ ul img {
     background-color: rgba(243, 243, 243, 0.3);
 } */
 
-svg {
+/* svg {
   display: flex;
   justify-content: flex-end;
    position: fixed;
@@ -115,37 +147,85 @@ svg {
   z-index: 10;
   cursor: pointer;
   margin: 10px;
-}
-.main {
+} */
+/* .main {
     display: flex;
     justify-content:flex-start;
     padding: 30px;
     top:0;
     position: fixed;
 
-}
+} */
+main {
+    padding: 30px;
+    display: grid;
+    color: #E4F6F4;
+        
 
+}
 
 .homeText { 
     font-size: 90px;
     font-family: 'Rockybilly';
-    z-index: 2;
-    position: fixed;
+    /* z-index: 2; */
+    /* position: fixed; */
     left: 10%;
-    z-index: 2;
+    /* z-index: 2; */
 
 
 }
 
-.homePage img {
+/* .homePage img {
     width: 300px;
     z-index: 3;
     position: fixed;
     right: 30%;
     top: 5%;
+} */
+
+.homePage {
+    color: #E4F6F4;
 }
 
+.homePage h2 {
+    font-size: 38px;
+    font-family: 'Rockybilly';
+    text-align: center;
 
+
+}
+
+.homePage p {
+    font-family: Akaya;
+    text-align: center;
+    font-size: 30px;
+}
+.homeButtons {
+    /* display: flex; */
+    /* gap: 30px; */
+    text-align: center;
+
+}
+.homeButtons button {
+        font-family: Akaya;
+    padding: 10px;
+}
+.vPro {
+    border: none;
+
+    background-color: #E4F6F4;
+    color: #102D2A;
+
+
+
+
+}
+
+.res {
+    border: 2px solid #E4F6F4;
+    color: #E4F6F4;
+    background-color: #102D2A;
+}
 .page {
     padding: 20px;
     font-size: 28px;
@@ -168,7 +248,7 @@ svg {
     right: 0;
     bottom: 0;
     position: absolute;
-    background-color: #f7f5e3;
+    /* background-color: #f7f5e3; */
     padding: 20px;
     overflow: auto;
     overflow-x: hidden;
@@ -199,7 +279,7 @@ svg {
     display: inline-block;
     border: 2px solid #809c85;
     border-radius: 10px;
-    display: none;
+    /* display: none; */
     text-align: start;
     width: fit-content;
 
@@ -221,7 +301,7 @@ svg {
 #contactsText {
     text-align: center;
     display: grid;
-    display: none;
+    /* display: none; */
     font-family: Akaya;
 
 }
@@ -232,7 +312,7 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-    display: none;
+    /* display: none; */
     font-family: 'Akaya';
 
 }
@@ -248,7 +328,7 @@ svg {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     margin-top: 20px;
-    display: none;
+    /* display: none; */
     width: fit-content;
     
 
@@ -268,7 +348,7 @@ svg {
     grid-template-columns:1fr 1fr 1fr ;
     gap: 10px;
     width: fit-content;
-    display: none;
+    /* display: none; */
 
 }
 
@@ -277,7 +357,7 @@ svg {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     margin-top: 20px;
-    display: none;
+    /* display: none; */
 
 
 }
@@ -346,11 +426,12 @@ svg {
 }
 a {
     text-decoration: none;
-    color: #494135;
+    color: #102D2A;
+    /* color: #494135; */
 
 }
 a:hover {
-  color: #ffffff;
+  /* color: #ffffff; */
 
 }
 
@@ -365,7 +446,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
 }
 
 
