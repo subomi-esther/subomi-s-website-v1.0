@@ -75,6 +75,7 @@ body {
   /* right: 0; */
   top: 0;
   padding: 20px;
+  position: sticky;
   /* position: fixed; */
   /* display: none; */
   /* animation-name: slide-in-right;
@@ -122,11 +123,14 @@ a {
     /* background-color:#ebe5ff ; */
     /* width: 50px;
     height: 50px; */
+    width: 400px;
     border-radius: 50%;
     text-align: center;
       overflow: hidden;
 
 }
+
+
 
 /* .menu button {
     height:30px;
@@ -160,6 +164,7 @@ main {
     padding: 30px;
     display: grid;
     color: #E4F6F4;
+    gap: 30px;
         
 
 }
@@ -226,6 +231,8 @@ main {
     color: #E4F6F4;
     background-color: #102D2A;
 }
+
+
 .page {
     padding: 20px;
     font-size: 28px;
@@ -275,13 +282,14 @@ main {
 
 
 
-#aboutText {
-    display: inline-block;
-    border: 2px solid #809c85;
+.about {
+    /* display: inline-block; */
+    border: 2px solid #E4F6F4;
     border-radius: 10px;
+    padding: 20px;
     /* display: none; */
-    text-align: start;
-    width: fit-content;
+    /* text-align: start; */
+    /* width: fit-content; */
 
 
 }
@@ -289,8 +297,15 @@ main {
 .aboutDiv {
 
     display: flex;
+    justify-content: space-evenly;
     font-family: akaya;
 
+}
+
+.aboutDiv p {
+    /* text-align: center; */
+    width: 400px;
+    font-size: 20px;
 }
 .pinimg {
     width: 900px;
@@ -369,18 +384,20 @@ main {
     border-radius: 10px;
     text-align: center;
     display:flex;
-    background-color: #809c85;
+    /* background-color: #E4F6F4; */
+    /* background-color: #102D2A; */
+    border: 2px solid #E4F6F4;
     flex-direction: column;
 
-    color: #f7f5e3;
-    width: fit-content;
+    /* color: #102D2A; */
+    /* width: fit-content; */
     padding-bottom: 15px;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    /* align-content: center; */
     width:auto;
-  animation-name: slide-in;
-  animation-duration: 2.5s;
+  /* animation-name: slide-in;
+  animation-duration: 2.5s; */
 
 }
 
@@ -398,7 +415,7 @@ main {
 
 
 .projectDiv p {
-    font-family: 'Caveat';
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     display: flex;
     margin-bottom: 5px;
@@ -409,8 +426,10 @@ main {
 
 .viewProjectBtn {
     text-decoration: none;
-    background-color: #e4bec5;
+    /* background-color: #102D2A; */
+    border: 2px solid #E4F6F4;
     text-align: center;
+    color: #E4F6F4;
 
     width: 200px;
     padding: 10px;
@@ -420,9 +439,18 @@ main {
 
 }
 
-.viewProjectBtn:hover {
-    background-color: #866e73;
+.viewProjectBtn a {
+    color: #E4F6F4;
+}
 
+.viewProjectBtn:hover {
+    /* background-color: #866e73; */
+    background-color: #E4F6F4;
+    color: #102D2A;
+
+}
+.viewProjectBtn a:hover {
+    color: #102D2A;
 }
 a {
     text-decoration: none;

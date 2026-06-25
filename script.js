@@ -129,19 +129,19 @@ function getImage(photos){
 
 function displayProjects(projects){
   const id = []
-  const year = []
+  // const year = []
   const name = []
   const pImg = []
   const link = []
-  // const tag = []
+  const tag = []
 
   for(let project of projects) {
     id.push(project.id)
-    year.push(project.year)
+    // year.push(project.year)
     name.push(project. name)
     pImg.push(project.image)
     link.push(project.link)
-    // tag.push(project.tags)
+    tag.push(project.tags)
 
   }
 
@@ -155,21 +155,22 @@ function displayProjects(projects){
 
       let image = document.createElement('img')
       let pName = document.createElement('p')
-      // let tagCon = document.createElement('div')
-      let pYear = document.createElement('p')
+      let tagCon = document.createElement('div')
+      // let pYear = document.createElement('p')
       let pLink = document.createElement('div')
       // let tagP = document.createElement('p')
       pLink.className= 'viewProjectBtn'
       
-      pName.innerHTML = `<p>Project Title: <span class="projectTitle">${ name[i]}</span></p>`
-      pYear.innerHTML = `<p>Year: <span>${ year[i]}</span> </p>`
+      pName.innerHTML = `<p>Project Title: ${ name[i]}</p>`
+      // pYear.innerHTML = `<p>Year: <span>${ year[i]}</span> </p>`
       image.src = pImg[i]
+      tagCon.innerHTML = `<p>Stack: ${tag[i]} </p>`
       pLink.innerHTML = ` <a href="${link[i]}">View Project</a>`
 
     project.appendChild(image)
     project.appendChild(pName)
-    // project.appendChild(tagCon)
-    project.appendChild(pYear)
+    project.appendChild(tagCon)
+    // project.appendChild(pYear)
     project.appendChild(pLink)
 
     projectBody.appendChild(project)
@@ -191,35 +192,35 @@ function displayProjects(projects){
 
   // }
 
-  menuBar.addEventListener('click', function(){
-    menu.style.display = 'flex'
+  // menuBar.addEventListener('click', function(){
+  //   menu.style.display = 'flex'
   
-  })
-  links.forEach((link, i) => {
-        link.addEventListener('click', function(){
-        menu.style.display = 'none'
-        popUp.style.display = 'block'
-        pageName.textContent = link.id
-        const clickedId = link.id
+  // })
+  // links.forEach((link, i) => {
+  //       link.addEventListener('click', function(){
+  //       menu.style.display = 'none'
+  //       popUp.style.display = 'block'
+  //       pageName.textContent = link.id
+  //       const clickedId = link.id
         
-        pages.forEach((page)=> {
-          const openedPage = page.id
+  //       pages.forEach((page)=> {
+  //         const openedPage = page.id
 
-          if(openedPage.includes(clickedId)){
+  //         if(openedPage.includes(clickedId)){
 
-            document.getElementById(openedPage).style.display = 'grid'
-            header.style.display = 'flex'
+  //           document.getElementById(openedPage).style.display = 'grid'
+  //           header.style.display = 'flex'
 
 
                     
 
-          } else if(!openedPage.includes(clickedId)) {
-              document.getElementById(openedPage).style.display = "none"
-          }
+  //         } else if(!openedPage.includes(clickedId)) {
+  //             document.getElementById(openedPage).style.display = "none"
+  //         }
 
-          })
-        })
-   })
+  //         })
+  //       })
+  //  })
   function backToHome() {
    popUp.style.display = 'none'
    menu.style.display = 'none'
