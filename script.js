@@ -1,19 +1,21 @@
 
 // const pageContent = document.getElementById('text')
 // const buttons = document.querySelectorAll('.pages')
-const br = document.getElementById('buttons2')
-const bre = document.getElementById('buttons')
-const pageName = document.getElementById('pageName')
+// const br = document.getElementById('buttons2')
+// const bre = document.getElementById('buttons')
+// const pageName = document.getElementById('pageName')
 const photographs = document.getElementById('photographsBody')
 const artworks = document.getElementById('artworksBody')
 const projectBody = document.getElementById('projectsBody')
+const skillsDiv = document.getElementById('skillsDiv')
 const popUp = document.getElementById('popUp')
 const header = document.getElementById('header')
 const menu = document.getElementById('menu')
-const menuBar = document.getElementById('menu-bar')
+const menuBar = document.getElementById('menuBar')
 const links = document.querySelectorAll('.links')
 const pages = document.querySelectorAll('.page')
-const closeModal = document.getElementById('closeModal')
+const closeBtn = document.getElementById('closeBtn')
+
 
 // async function getPhotographs() {
 
@@ -185,17 +187,29 @@ function displayProjects(projects){
 }
 
 
-  // function closeMenu(){
-  //   // menu.classList.add('slideOut')
-  //   menu.style.display = 'none'
-    
+  function closeMenu(){
+    // menu.classList.add('slideOut')
+    menu.style.display = 'none'
+    // console.log('hi');
 
-  // }
+  }
 
-  // menuBar.addEventListener('click', function(){
-  //   menu.style.display = 'flex'
-  
-  // })
+  menuBar.addEventListener('click', function(){
+    // menu.style.display = 'flex'
+      menu.style.display = 'flex'
+      closeBtn.style.display = 'flex'
+    // menu.classList.remove('menu')
+    menu.classList.add('menuMobile')
+
+  })
+
+  links.forEach(link => {
+    link.addEventListener('click', function (){
+      menu.style.display = 'none'
+
+
+    })
+  })
   // links.forEach((link, i) => {
   //       link.addEventListener('click', function(){
   //       menu.style.display = 'none'
@@ -230,11 +244,17 @@ function displayProjects(projects){
   let width = window.innerWidth
   if(width < 768) {
 
-    menu.style.display = 'flex'
+    menuBar.style.display = 'flex'
 
-    artworks.style.gridTemplateColumns =  "1fr"
+
+
+    // menu.style.display = 'flex'
+
+    // artworks.style.gridTemplateColumns =  "1fr"
+
     projectBody.style.gridTemplateColumns =  "1fr"
-    photographs.style.gridTemplateColumns =  "1fr"
+    skillsDiv.style.gridTemplateColumns =  "1fr"
+    // photographs.style.gridTemplateColumns =  "1fr"
 
       } else if (width > 1024) {
         menu.style.display = 'flex'

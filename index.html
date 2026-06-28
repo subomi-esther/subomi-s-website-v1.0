@@ -9,9 +9,10 @@
 
 </head>
 <body>
-    <!-- <svg id="menu-bar" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="black" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg> -->
+    <svg class="menuBar" id="menuBar" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="#E4F6F4" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
 
     <div class="menu" id="menu">
+        <h1 id="closeBtn" onclick="closeMenu()" class="closeBtn">X</h1>
         <p>Q.O</p>
 
         <ul>
@@ -40,10 +41,10 @@
 
         <div  class="homePage">
             <h2>Blending creativity and technology</h2>
-            <p>Hi! I'm Olasubomi and I help turn complex ideas into simple, beautiful and seamless
+            <p>Hi! I'm Subomi and I help turn complex ideas into simple, beautiful and seamless
                  websites to help your brand presence stand out.</p>
            <div class="homeButtons">
-           <button class="vPro">View Projects</button>
+           <button class="vPro"> <a href="#projectsBody">View Projects</a></button>
            <button class="res">Download Resume</button>
            </div>
 
@@ -69,9 +70,11 @@
 
 
         <div id="aboutText" class="about">
+            <h1>About Me</h1>
             <div class="aboutDiv">
+
                 <div class="profile">
-                    <img src="Assets/images/subby.JPG" alt="">
+                    <img src="Assets/images/subby 2.jpg" alt="">
                 </div>
                 <p> Hi! I’m Olasubomi, a Cell Biology and Genetics Student, based in Nigeria.
                         I have taken an interest in web development and recntly completed a one year course in Front-end 
@@ -94,38 +97,62 @@
 
 
 
-        <div id="experienceText" class="page">
-                <div class="exInfo">
+        <div id="experienceText" class="skills">
+            <h1>My Skills and Tools I work with.</h1>
+            <div id="skillsDiv" class="skillsDiv">
+                <div >
                 <h2>Tools</h2>
                 <p>Vscode</p>
                 <p>Microsoft word</p>
-                <p>Github</p>
                 <p>Figma</p>
+                <p>Browser Developer Tool</p>
                 </div>
 
-                <div class="exInfo">
-                <h2>Skills</h2>
-                <p>HTML</p>
-                <p>Javascript</p>
-                <p>CSS</p>
-                <p>React</p>
-                <p>UI/UX</p>
+                <div>
+                <h2>Version Control and hosting</h2>
+                <p>Git</p>
+                <p>GitHub</p>
+                <p>Vercel</p>
+
                 </div>
+
+                <div >
+                <h2>Front-end Dev.</h2>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>Javascript</p>
+                <p>React Js.</p>
+                <p>UI/UX</p>
+                </div>                
+            </div>
+
 
           <!-- <img width="300px" src="Assets/images/butterfly.png" alt=""> -->
         </div>
-       <div  id="projectsBody" class="page">
+       <div  class="page">
+        <h1>Projects</h1>
+
+        <div id="projectsBody">
+
+        </div>
 
         </div>            
         <div id="contactsText" class="page">
-                <a href="https://github.com/subomi-esther"><p>Github</p></a>
-                <i class="fa fa-github-square"></i>
+            <h1>Get in Touch</h1>
 
-                <p>Linkedin</p>
-                <i class="fa fa-linkedin" ></i>
+            <div class="contactDiv">
+                <p>
+                    <a href=""><i class="fa fa-github-square"></i>Github</a
+                ></p>
+                <p>
+                    <a href=""><i class="fa fa-linkedin" ></i>Linkedin</a>
+                </p>
+                <p>
+                    <a href=""><i class="fa fa-envelope" ></i>Email</a>
+                </p>
 
-                <p>Email</p>
-                <i class="fa fa-envelope" ></i>
+            </div>
+
 
 
         </div>
